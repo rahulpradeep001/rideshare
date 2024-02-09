@@ -1,0 +1,26 @@
+{% extends 'workshop/workshop_index.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="200" border="1" class="table table-hover">
+    <tr>
+      <td>Name</td>
+      <td>Complaint</td>
+      <td>Reply</td>
+      <td>Date</td>
+    </tr>
+     {% for i in val %}
+    <tr>
+      <td>{{i['name']}}</td>
+      <td>{{i['complaint']}}</td>
+      <td>{{i['replay']}}</td>
+      <td>{{i['date']}}&nbsp;</td>
+    </tr>
+       {% endfor %}
+     <tr>
+         <td><center><a href="Send_Complaint">Send complaint</a></center></td>
+    </tr>
+  </table>
+</form>
+</body>
+{% endblock %}

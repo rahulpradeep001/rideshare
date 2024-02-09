@@ -1,0 +1,57 @@
+{% extends 'admin/admin_index.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="/add_workshop_post">
+<table width="200" border="1" class="table table-hover">
+  <tr>
+    <td>Name</td>
+    <td>
+      <input type="text" name="textfield1" />
+  </td>
+  </tr>
+  <tr>
+    <td>place</td>
+    <td><input type="text" name="textfield2" /></td>
+  </tr>
+  <tr>
+    <td>post</td>
+    <td><input type="text" name="textfield3" /></td>
+  </tr>
+  <tr>
+    <td>pin</td>
+    <td><input type="text" name="textfield4" /></td>
+  </tr>
+  <tr>
+    <td>contact</td>
+    <td><input type="text" name="textfield5" /></td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td><input type="text" name="textfield6" /></td>
+  </tr>
+  <tr>
+    <td>Latitude</td>
+    <td><input type="text" name="lati" /></td>
+  </tr>
+  <tr>
+    <td>Longitude</td>
+    <td><input type="text" name="longi" /></td>
+  </tr>
+  <tr>
+    <td>username</td>
+    <td><input type="text" name="textfield7" /></td>
+  </tr>
+  <tr>
+    <td>password</td>
+    <td><input type="password" name="textfield8" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <input type="submit" name="Submit" value="ADD " />
+    </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
+{% endblock %}

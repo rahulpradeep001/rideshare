@@ -1,0 +1,36 @@
+{% extends 'admin/admin_index.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="complaint1">
+  <table width="200" border="1" class="table table-hover">
+
+    <tr colspan="5" align="center">
+      <td> type:<select name="select">
+        <option {% if type =='wk' %}selected{% endif %}>Work shop</option>
+        <option {% if type =='user' %}selected{% endif %}>user</option>
+      </select>
+      <input type="submit" name="Submit" value="SEARCH" /></td>
+
+    </tr>
+    <tr>
+      <td><p>Name</p>
+      </td>
+      <td>Complaint</td>
+      <td>Date</td>
+      <td>Reply</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td>{{i['name']}} </td>
+      <td>{{i['complaint']}}</td>
+      <td>{{i['date']}}</td>
+      <td>{{i['reply']}}</td>
+      <td><a href="send_reply?id={{i['c_id']}}">Reply</a></td>
+    </tr>
+  {% endfor %}
+  </table>
+
+</form>
+</body>
+</html>
+{% endblock %}

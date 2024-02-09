@@ -1,0 +1,29 @@
+{% extends 'admin/admin_index.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="200" border="1" class="table table-hover">
+    <tr>
+      <td>Name</td>
+      <td>Address</td>
+      <td>Contact</td>
+      <td>Email</td>
+      <td>Gender</td>
+      <td>proof</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td>{{i['firstname']}} {{i['laststname']}}</td>
+      <td>{{i['place']}} {{i['post']}} {{i['pin']}}</td>
+      <td>{{i['contact']}}</td>
+      <td>{{i['email']}}&nbsp;</td>
+      <td>{{i['gender']}}</td>
+      <td>{{i['photo']}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</form>
+</body>
+<!--</html>-->
+{% endblock %}

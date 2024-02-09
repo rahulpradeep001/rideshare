@@ -1,0 +1,28 @@
+{% extends 'workshop/workshop_index.html' %}
+{% block body %}
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <table width="200" border="1" class="table table-hover">
+    <tr>
+      <td>service</td>
+      <td>Details</td>
+      <td>Cost</td>
+      <td>&nbsp;</td>
+    </tr>
+    {% for i in val %}
+    <tr>
+      <td>{{i['service']}}</td>
+      <td>{{i['details']}}</td>
+      <td>{{i['cost']}}</td>
+      <td><p><a href="editservice?id={{i['s_id']}}">Edit</a></p>
+      <p><a href="deleteservices?id={{i['s_id']}}">Delete</a></p></td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td colspan="4" align="center"><a href="Add_Service">Add new</a></td>
+    </tr>
+  </table>
+</form>
+</body>
+{% endblock %}

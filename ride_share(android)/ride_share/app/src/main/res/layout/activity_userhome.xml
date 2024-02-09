@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".userhome"
+    android:background="@drawable/bgw">
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:text="view nearest cab and book" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button35"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:text="cab booking status" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:text="complaint" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="315dp"
+            android:layout_height="match_parent"
+            android:text="feedback" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button34"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:text="update status of my ride" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button33"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:text="view workshop booking status" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="share ride info " />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="view ride request " />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:text="view ride and request" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button84"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:text="view ride request status " />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="nearest workshop" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:text="Logout" />
+    </TableRow>
+</LinearLayout>

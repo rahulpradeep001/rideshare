@@ -1,0 +1,42 @@
+{% extends 'admin/admin_index.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="/edit_workshop_post">
+<table width="200" border="1" class="table table-hover">
+  <tr>
+    <td>Name</td>
+    <td>
+      <input type="text" name="textfield1" value="{{val['name']}}"/>
+  </td>
+  </tr>
+  <tr>
+    <td>place</td>
+    <td><input type="text" name="textfield2" value="{{val['place']}}" /></td>
+  </tr>
+  <tr>
+    <td>post</td>
+    <td><input type="text" name="textfield3" value="{{val['post']}}" /></td>
+  </tr>
+  <tr>
+    <td>pin</td>
+    <td><input type="text" name="textfield4" value="{{val['pin']}}" /></td>
+  </tr>
+  <tr>
+    <td>contact</td>
+    <td><input type="text" name="textfield5" value="{{val['contact']}} "/></td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td><input type="text" name="textfield6" value="{{val['email']}}"/></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center">
+      <input type="submit" name="Submit" value="update " />
+    </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ride_share">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:requestLegacyExternalStorage="true"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ride_share"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".viewriderequeststatus"
+            android:exported="false" />
+        <activity
+            android:name=".viewworkshopstatus"
+            android:exported="false" />
+        <activity
+            android:name=".custom4"
+            android:exported="false" />
+        <activity
+            android:name=".custom5"
+            android:exported="false" />
+        <activity
+            android:name=".workshopbookingsatus"
+            android:exported="false" />
+        <activity
+            android:name=".updatestatusofmyride"
+            android:exported="false" />
+        <activity
+            android:name=".cabbookingstatus"
+            android:exported="false" />
+        <activity
+            android:name=".myrequeststatus"
+            android:exported="false" />
+        <activity
+            android:name=".viewride"
+            android:exported="false" />
+        <activity
+            android:name=".viewrequest"
+            android:exported="false" />
+        <activity
+            android:name=".sharerideinfo"
+            android:exported="false" />
+        <activity
+            android:name=".userhome"
+            android:exported="false" />
+        <activity
+            android:name=".services"
+            android:exported="false" />
+        <activity
+            android:name=".sendrating"
+            android:exported="false" />
+        <activity
+            android:name=".sendfeedback"
+            android:exported="false" />
+        <activity
+            android:name=".sendcomplaintu"
+            android:exported="false" />
+        <activity
+            android:name=".sendcomplaint"
+            android:exported="false" />
+        <activity
+            android:name=".registration"
+            android:exported="false" />
+        <activity
+            android:name=".nearestworkshop"
+            android:exported="false" />
+        <activity
+            android:name=".driverhome"
+            android:exported="false" />
+
+        <service
+            android:name=".LocationService"
+            android:exported="false" />
+
+        <activity
+            android:name=".custom"
+            android:exported="false" />
+        <activity
+            android:name=".complaintu"
+            android:exported="false" />
+        <activity
+            android:name=".complaint"
+            android:exported="false" />
+        <activity
+            android:name=".Custom_product"
+            android:exported="false" />
+        <activity
+            android:name=".cabreg"
+            android:exported="false" />
+        <activity
+            android:name=".bookcab"
+            android:exported="false" />
+        <activity
+            android:name=".viewrideandreq"
+            android:exported="false" />
+        <activity
+            android:name=".viewnearestcab"
+            android:exported="false" />
+        <activity
+            android:name=".viewfeedback"
+            android:exported="false" />
+        <activity
+            android:name=".viewcabbooking"
+            android:exported="false" />
+        <activity
+            android:name=".viewbookingstatus"
+            android:exported="false" />
+        <activity
+            android:name=".userreg"
+            android:exported="false" />
+        <activity
+            android:name=".shareride"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
